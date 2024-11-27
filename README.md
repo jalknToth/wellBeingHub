@@ -2,7 +2,7 @@
 
 https://jalkntoth.github.io/wellBeingHub/
 
-## Capturas de Pantalla
+## Screenshots
 
 <table>
   <tr>
