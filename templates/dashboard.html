@@ -18,15 +18,6 @@
     <link rel="stylesheet" href="/public/styleDashboard.css">
 </head>
 <body>
-    <?php
-    if (!isset($_SESSION['user'])) {
-        header("Location: /login");
-        exit;
-    }
-
-    // Retrieve user data
-    $user = $_SESSION['user'];
-    ?>
     
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
@@ -48,7 +39,7 @@
     <!-- Welcome Section -->
     <header class="bg-primary text-white text-center py-5">
         <div class="container">
-            <h1>Welcome, <?php echo htmlspecialchars($user['Names']); ?>!</h1>
+            <h1>Welcome</h1>
             <p class="lead">Manage your health efficiently with WellBeingHub.</p>
             <a href="#features" class="btn btn-light btn-lg">Explore Features</a>
         </div>
@@ -63,12 +54,12 @@
                         <h2 class="mb-0">Your Details</h2>
                     </div>
                     <div class="card-body">
-                        <p><strong>Document:</strong> <?php echo htmlspecialchars($user['Document']); ?></p>
-                        <p><strong>Email:</strong> <?php echo htmlspecialchars($user['Email']); ?></p>
-                        <p><strong>Phone:</strong> <?php echo htmlspecialchars($user['Phone'] ?? 'Not Provided'); ?></p>
-                        <p><strong>Address:</strong> <?php echo htmlspecialchars($user['Address'] ?? 'Not Provided'); ?></p>
-                        <p><strong>Birthdate:</strong> <?php echo htmlspecialchars($user['Birthdate'] ?? 'Not Provided'); ?></p>
-                        <p><strong>Gender:</strong> <?php echo htmlspecialchars($user['Gender'] ?? 'Not Provided'); ?></p>
+                        <p><strong>Document:</strong></p>
+                        <p><strong>Email:</strong></p>
+                        <p><strong>Phone:</strong></p>
+                        <p><strong>Address:</strong> </p>
+                        <p><strong>Birthdate:</strong> </p>
+                        <p><strong>Gender:</strong></p>
                     </div>
                 </div>
             </div>

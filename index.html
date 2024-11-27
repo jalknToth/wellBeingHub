@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="/public/logStyle.css">
 </head>
 <body>
-    
-    <?php if (isset($_SESSION['error'])): ?>
-        <div class="alert alert-danger"><?php echo $_SESSION['error']; unset($_SESSION['error']); ?></div>
-    <?php endif; ?>
-
     <div class="login-container">
         <h1>Login</h1>
         <form action="/login" method="POST">
@@ -27,7 +22,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Login</button>
         </form>
-        <p class="text-center mt-3">Don't have an account? <a href="/register">Register</a></p>
+        <p class="text-center mt-3">Don't have an account? <a href="./templates/register.php">Register</a></p>
     </div>
 </body>
 </html>
