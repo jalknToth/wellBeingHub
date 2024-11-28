@@ -39,3 +39,10 @@ body {
 .text-center a {
     color: #34495e;
 }
+
+img{
+    width: 40px;
+    filter: invert(100%) sepia(50%) hue-rotate(200deg);
+    margin-bottom: 30px;
+}
+

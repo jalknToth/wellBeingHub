@@ -205,3 +205,8 @@ body {
         font-size: 1.5rem;
     }
 }
+
+img{
+    width: 40px;
+    filter: invert(100%) sepia(100%) hue-rotate(200deg);
+}
