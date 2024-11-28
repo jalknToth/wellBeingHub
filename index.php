@@ -58,7 +58,6 @@ switch ($requestUri) {
                 header("Location: /dashboard");
                 exit;
             } else {
-                $_SESSION['error'] = "Invalid credentials.";
                 include __DIR__ . '/views/login.php';
             }
         } else {
@@ -74,13 +73,30 @@ switch ($requestUri) {
         include __DIR__ . '/views/dashboard.php';
         break;
 
+    case '/vacation':
+        if (!isset($_SESSION['user'])) {
+            header("Location: /login");
+            exit;
+        }
+        include __DIR__ . '/views/vacation.php';
+        break;
+
+    case '/incapacity':
+        if (!isset($_SESSION['user'])) {
+            header("Location: /login");
+            exit;
+        }
+        include __DIR__ . '/views/incapacity.php';
+        break;
+
     case '/logout':
         $auth->logout();
         header("Location: /login");
         exit;
 
     default:
-        header("Location: /login");
+        header("HTTP/1.0 404 Not Found");
+        include __DIR__ . '/views/404.php';
         exit;
 }
 ?>
