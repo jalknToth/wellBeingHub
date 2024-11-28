@@ -212,5 +212,6 @@ body {
 
 img{
     width: 40px;
+    margin: 10px;
     filter: invert(100%) sepia(100%) hue-rotate(200deg);
 }
