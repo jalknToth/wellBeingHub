@@ -1,6 +1,6 @@
-# link
+# WellBeingHub
 
-https://jalkntoth.github.io/wellBeingHub/
+WebApp to automate process of vacation and incapacity
 
 ## Screenshots
 
